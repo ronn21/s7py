@@ -1,6 +1,5 @@
 import os
 import function
-
 # Defining main function
 
 
