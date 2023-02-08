@@ -2,10 +2,12 @@ import os
 import function
 # Defining main function
 
+# define your S7 ip address here
+ipS7 = "10.155.155.100"
 
 def main():
     print("hey there")
-    plc = function.S7300("10.155.155.100")
+    plc = function.S7300(ipS7)
     print("plc is connected", plc.__isconnected__())
     # check value from M130.0
     print("M130.0 = ", plc.mbit(130, 0))
